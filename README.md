@@ -8,7 +8,7 @@ This is a demo project as a first interview step.
 - Jetty Container
 - Jersey JAX-RS implementation
 
-###Requirements
+### Requirements
 - Java 8 Runtime 
 
 ### How to run
@@ -26,8 +26,8 @@ Application will start a jetty server, H2 database. Next API are available:
 | HTTP METHOD | PATH | USAGE |
 | -----------| ------ | ------ |
 | PUT | /account/| create new account | 
-| GET | /account/<id> | get account detais | 
-| POST | /account/<id> | update account | 
+| GET | /account/id | get account detais | 
+| POST | /account/id | update account | 
 | POST | /transaction/ | perform transaction between accounts | 
 
 ### Http Status
@@ -35,7 +35,7 @@ Application will start a jetty server, H2 database. Next API are available:
 - 400 Bad Request: in case of business errors 
 - 500 Internal Server Error: unexpected error 
 
-### Sample JSON for User and Account
+### Sample JSON for User and Transaction
 ##### Account : 
 ```sh
 {
@@ -50,6 +50,6 @@ Application will start a jetty server, H2 database. Next API are available:
 {
 	"creditAccountId":2,
 	"debitAccountId":1,
-	"amount":-99
+	"amount": 99
 }
 ```
